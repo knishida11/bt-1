@@ -1,0 +1,23 @@
+.top-features {
+  display: flex;
+
+  @include mq(sm) {
+    display: block;
+  }
+
+  &__box {
+    flex: 1 0 33.3%;
+    text-align: center;
+    padding: 75px 50px;
+    background-color: #f4f4f4;
+
+    &:nth-child(even) {
+      background-color: #f7c08a;
+      color: #333;
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+  }
+}

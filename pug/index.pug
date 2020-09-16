@@ -1,0 +1,33 @@
+- var path = "./";
+include ./_include/_head.pug
+  title ABC
+body
+  include ./_include/_header.pug
+  main
+    .top-mainImg.wow.fadeIn
+      .wrap
+        .top-mainImg__content
+          p.top-mainImg__title
+            |<span class="u-textPrimary">Enjoy</span> Your Stay
+          p.top-mainImg__text d1 は qa を割り切るから差 b - qa を割り切るが、b - qa は r に等しい。したがって、d1 は a とrを割り切る。言い換えると b と a の公約数はすべてa と r の公約数である。
+    section.top-info#about
+      .top-info__image
+      .top-info__content
+        h2.top-info__title.wow.fadeInDown
+          |私たちの<span class="u-textPrimary">ホテル</span>の歴史
+        p.top-info__text.wow.fadeInDown この図のように最大公約数を求める対象の２つの整数を幅と高さに設定した長方形内での赤色の斜めの直線の描画過程によっても表現できる。 赤色の斜めの直線の描画は、はじめはその長方形内を描画範囲とし、その角から内部に向け、かつ、その辺に対して45度の差を持たせて開始する。
+        a(href="./about").g-button.g-button--light.g-button--mt30.wow.fadeInDown Read More
+    section.top-features
+      .top-features__box
+        i.fas.fa-hotel.fa-3x.wow.fadeInDown
+        h3.top-features__title.wow.fadeInDown ロケーション
+        p.top-features__text.wow.fadeInDown 描画の終了となり、最後にして最小の描画範囲の短辺の長さが最大公約数となる。
+      .top-features__box
+        i.fas.fa-utensils.fa-3x.wow.fadeInDown
+        h3.top-features__title.wow.fadeInDown 食事
+        p.top-features__text.wow.fadeInDown 描画の終了となり、最後にして最小の描画範囲の短辺の長さが最大公約数となる。
+      .top-features__box
+        i.fas.fa-dumbbell.fa-3x.wow.fadeInDown
+        h3.top-features__title.wow.fadeInDown 施設
+        p.top-features__text.wow.fadeInDown 描画の終了となり、最後にして最小の描画範囲の短辺の長さが最大公約数となる。
+  include ./_include/_footer.pug

@@ -1,0 +1,35 @@
+.header {
+  background-color: #333;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    color: #fff;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__listItemLink {
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    transition: 0.4s;
+
+    @include mq(sm) {
+      padding: 20px 10px;
+    }
+  }
+
+  .header__current,
+  .header__listItemLink:hover {
+    background-color: #444;
+    color: #f7c08a;
+  }
+}

@@ -1,0 +1,39 @@
+- var path = "../";
+include ../_include/2nd-lavel/_head.pug
+  title ABC | Contact
+body
+  include ../_include/2nd-lavel/_header.pug
+  main.wow.fadeIn
+    section.contact-formArea
+      .wrap
+        h1.contact-formArea__title <span class="u-textPrimary">Contact</span> Us
+        p.contact-formArea__text 問い合わせ内容を下記からご送信ください。
+        form.contact-formArea__form
+          .contact-formArea__formGroup
+            label(for="name").contact-formArea__label 名前
+            input(type="text", name="name", id="name")
+          .contact-formArea__formGroup
+            label(for="email").contact-formArea__label Eメール
+            input(type="text", name="email", id="email")
+          .contact-formArea__formGroup
+            label(for="message").contact-formArea__label メッセージ
+            textarea(name="message", id="message")
+          button(type="submit").g-button.g-button--center.g-button--mt10 送信
+    section.contact-info
+      .wrap
+        .contact-info__content
+          .contact-info__box
+            i.fas.fa-hotel.contact-info__icon
+            h3.contact-info__title 場所
+            p.contact-info__text Lorem ipsum dolor sit amet.
+          .contact-info__box
+            i.fas.fa-phone.contact-info__icon
+            h3.contact-info__title.contact-info__title--phone 電話番号
+            p.contact-info__text
+              a(href="#").contact-info__link 000-0000-0000
+          .contact-info__box
+            i.fas.fa-envelope.contact-info__icon
+            h3.contact-info__title Eメール
+            p.contact-info__text
+              a(href="mailto:example@example.com").contact-info__link example@example.com
+  include ../_include/2nd-lavel/_footer.pug

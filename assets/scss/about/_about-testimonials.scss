@@ -1,0 +1,54 @@
+.about-testimonials {
+	padding-top: 100px;
+	background-image: url(../img/test-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 600px;
+
+	@include mq(sm) {
+		height: auto;
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	&__title {
+		text-align: center;
+		color: #fff;
+		font-size: 40px;
+
+		@include mq(sm) {
+			font-size: 28px;
+		}
+	}
+
+	&__item {
+		padding: 20px;
+		background-color: rgba(#f7c08a, 0.8);
+		margin-top: 40px;
+		display: flex;
+		align-items: center;
+		border-radius: 5px;
+
+		@include mq(sm) {
+			display: block;
+		}
+	}
+
+	&__img {
+		width: 100px;
+		margin-right: 20px;
+		border-radius: 50%;
+
+		@include mq(sm) {
+			display: block;
+			margin: 0 auto;
+		}
+	}
+
+	&__text {
+		@include mq(sm) {
+			margin-top: 10px;
+		}
+	}
+}
